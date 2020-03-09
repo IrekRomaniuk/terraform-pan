@@ -22,8 +22,3 @@ variable "address_object_tag" {
   default     = "Terraform"
 }
 
-variable "tags" {
-  type        = "map"
-  description = "tags"
-  default     = {}
-}
