@@ -1,4 +1,5 @@
 variable "create_address_object" {
+  type        = "integer"
   default     = 0
 }
 
@@ -28,6 +29,7 @@ variable "address_object_tag" {
 }
  
 variable "create_security_rule" {
+  type        = "integer"
   default     = 0
 }
 
