@@ -43,6 +43,11 @@ variable "security_rule_name" {
   description = "(Required) The security rule name"
 }
 
+variable "source_addresses" {
+  type        = "string"
+  description = ""
+}
+
 variable "source_zones" {
   type        = "string"
   description = ""
