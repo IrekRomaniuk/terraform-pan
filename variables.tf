@@ -1,5 +1,5 @@
 variable "create_address_object" {
-  default     = false
+  default     = 0
 }
 
 variable "address_object_name" {
@@ -28,7 +28,7 @@ variable "address_object_tag" {
 }
  
 variable "create_security_rule" {
-  default     = false
+  default     = 0
 }
 
 
