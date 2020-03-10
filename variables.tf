@@ -1,7 +1,13 @@
+variable {
+  create_address_object = "bool"
+  default     = false
+}
+
 variable "address_object_name" {
   type        = "string"
   description = "name"
 }
+
 variable "device_group" {
   type        = "string"
   description = "PAN device group"
@@ -22,6 +28,12 @@ variable "address_object_tag" {
   default     = "Terraform"
 }
  
+variable {
+  create_security_rule = "bool"
+  default     = false
+}
+
+
 variable "position_keyword" {
   type        = "string"
   description = "This can be before, directly before, after, directly after, top, bottom, or left empty (the default)"
