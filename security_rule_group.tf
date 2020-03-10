@@ -8,8 +8,8 @@ resource "panos_panorama_security_rule_group" "security_rule" {
         source_addresses = "${var.source_addresses}"
         source_users = ["${var.source_users }"]
         hip_profiles = ["${var.hip_profiles }"]
-        destination_zones = "${var.destination_zones}"
-        destination_addresses = ["${var.destination_addresses}"]
+        destination_zones = ["${var.destination_zones}"]
+        destination_addresses = "${var.destination_addresses}"
         applications = ["${var.applications}"]
         services = ["${var.services}"]
         categories = ["${var.categories}"]
