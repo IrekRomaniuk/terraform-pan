@@ -48,7 +48,7 @@ variable "security_rule_name" {
 }
 
 variable "source_addresses" {
-  type        = "string"
+  type        = "list"
   description = ""
 }
 
@@ -77,7 +77,7 @@ variable "destination_zones" {
 }
 
 variable "destination_addresses" {
-  type        = "string"
+  type        = "list"
   description = ""
 }
 
