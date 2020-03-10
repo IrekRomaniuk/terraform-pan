@@ -1,5 +1,5 @@
-variable {
-  create_address_object = "bool"
+variable "create_address_object" {
+  type = "bool"
   default     = false
 }
 
@@ -28,8 +28,8 @@ variable "address_object_tag" {
   default     = "Terraform"
 }
  
-variable {
-  create_security_rule = "bool"
+variable "create_security_rule" {
+  type = "bool"
   default     = false
 }
 
