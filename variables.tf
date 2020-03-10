@@ -1,7 +1,3 @@
-variable "create_address_object" {
-  default     = 0
-}
-
 variable "address_object_name" {
   type        = "string"
   description = "name"
@@ -27,8 +23,16 @@ variable "address_object_tag" {
   default     = "Terraform"
 }
  
-variable "create_security_rule" {
-  default     = 0
+variable "security_rule" {
+  type        = "string"
+  description = "create or not"
+  default     = ""
+}
+
+variable "address_object" {
+  type        = "string"
+  description = "create or not"
+  default     = ""
 }
 
 

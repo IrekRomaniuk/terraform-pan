@@ -1,5 +1,5 @@
 resource "panos_panorama_address_object" "address_object" {
-    count = "${var.create_address_object} ? 1 : 0}"
+    count = "${var.address_object == "create"} ? 1 : 0}"
     name = "${var.address_object_name}"
     device_group = "${var.device_group}"
     value = "${var.address_object_value}"

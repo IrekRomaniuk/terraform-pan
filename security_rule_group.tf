@@ -1,5 +1,5 @@
 resource "panos_panorama_security_rule_group" "security_rule" {
-    count = "${var.create_security_rule} ? 1 : 0}" 
+    count = "${var.security_rule == "create"} ? 1 : 0}" 
     position_keyword = "${var.position_keyword}"
     # position_reference = "${var.position_reference}"
     rule {
